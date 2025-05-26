@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "331878536429",
+    "firebase_url": "https://brushbuddies-35472-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "brushbuddies-35472",
+    "storage_bucket": "brushbuddies-35472.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331878536429:android:3088b96e3e54367b05a8e4",
+        "android_client_info": {
+          "package_name": "com.brushb.brushbuddies"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAe7iLErUqalrh6QIEjjHucEKf_Fim3JSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

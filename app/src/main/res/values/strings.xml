@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BrushBuddies</string>
+    <string-array name="brush_types">
+        <item>Обычная</item>
+        <item>Размытие</item>
+        <item>Маркер</item>
+        <item>Спрей</item>
+    </string-array>
+</resources>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false"
+    android:enterFadeDuration="1000"
+    android:exitFadeDuration="1000">
+    <item
+        android:drawable="@drawable/gradient_bl_tr"
+        android:duration="4000"/>
+    <item
+        android:drawable="@drawable/gradient_tr_bl"
+        android:duration="4000"/>
+    <item
+        android:drawable="@drawable/gradient_tl_br"
+        android:duration="4000"/>
+    <item
+        android:drawable="@drawable/gradient_br_tl"
+        android:duration="4000"/>
+</animation-list>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#808080</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="error_red">#FF0000</color>
+    <color name="background_color">#FFF5F5F5</color>
+    <color name="surface_color">#FFFFFFFF</color>
+    <color name="border_color">#1F000000</color>
+    <color name="button_text_color">#FFFFFFFF</color>
+    <color name="radio_text_color">#FF000000</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="player_card_bg">#FFF5F9FF</color>
+    <color name="player_name">#FF0077B6</color>
+    <color name="player_stats">#FF00B4D8</color>
+    <color name="player_status">#FFFB8500</color>
+    <color name="button_gradient_start">#FF00B4D8</color>
+    <color name="button_gradient_end">#FF0077B6</color>
+    <color name="button_pressed">#FFFB8500</color>
+    <color name="button_stroke">#FF0096C7</color>
+    <color name="teal_200">#80DEEA</color>
+    <color name="teal_500">#00B4D8</color>
+    <color name="teal_700">#0077B6</color>
+</resources>

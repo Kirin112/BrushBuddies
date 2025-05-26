@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp"
+    app:cardBackgroundColor="#FFF5F9FF"
+    app:strokeColor="#FF80DEEA"
+    app:strokeWidth="1dp"
+    app:cardElevation="2dp"
+    app:rippleColor="#2000B4D8">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:padding="16dp"
+android:gravity="center_vertical">
+
+
+<FrameLayout
+    android:layout_width="48dp"
+    android:layout_height="48dp"
+    android:background="@drawable/bg_player_avatar">
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_profile"
+        android:tint="#FFFFFFFF"
+        android:layout_gravity="center"
+        android:contentDescription="Аватар игрока"/>
+</FrameLayout>
+
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:layout_marginStart="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Игрок"
+        android:textColor="#FF0077B6"
+    android:textSize="16sp"
+    android:textStyle="bold"
+    />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/tvPlayerStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF00B4D8"
+        android:textSize="14sp"
+            android:text="🎮 12  🏆 5  ⭐ 1200"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+<ImageView
+    android:id="@+id/ivPlayerStatus"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+
+android:tint="#FFFB8500"
+android:visibility="gone"
+tools:visibility="visible"/>
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>

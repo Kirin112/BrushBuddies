@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BBDEFB">
+
+    <com.brushb.brushbuddies.DrawingView
+        android:id="@+id/drawingSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:maxWidth="720dp"
+        android:maxHeight="900dp"
+        app:layout_constraintBottom_toTopOf="@+id/toolsLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="#80FFFFFF"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- First Row -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/brushButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_brush"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@null" />
+
+        <SeekBar
+            android:id="@+id/brushSizeSeekBar"
+            android:layout_width="120dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="8dp"
+            android:max="50"
+            android:progress="10"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/brushButton"
+            app:layout_constraintTop_toTopOf="@+id/brushButton" />
+
+        <View
+            android:id="@+id/colorPreview"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:background="#FF000000"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/brushSizeSeekBar"
+            app:layout_constraintTop_toTopOf="@+id/brushButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/triangleButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_triangle"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/colorPreview"
+            app:layout_constraintTop_toTopOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lineButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_line"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/triangleButton"
+            app:layout_constraintTop_toTopOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/circleButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_circle"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/lineButton"
+            app:layout_constraintTop_toTopOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/rectangleButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_rectangle"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintBottom_toBottomOf="@+id/brushButton"
+            app:layout_constraintStart_toEndOf="@+id/circleButton"
+            app:layout_constraintTop_toTopOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <!-- Second Row -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/starButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_star"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/rectangleButton"
+            app:layout_constraintTop_toTopOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/eraserButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_eraser"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <Spinner
+            android:id="@+id/brushTypeSpinner"
+            android:layout_width="160dp"
+            android:layout_height="32dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:entries="@array/brush_types"
+            app:layout_constraintStart_toEndOf="@+id/eraserButton"
+            app:layout_constraintTop_toBottomOf="@+id/brushButton" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/clearButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_clear"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintStart_toEndOf="@+id/brushTypeSpinner"
+            app:layout_constraintTop_toBottomOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/fillButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_tool_button_selector"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            app:backgroundTint="@null"
+            app:icon="@drawable/ic_fill"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="28dp"
+            app:iconTint="@color/icon_tint_tool"
+            app:layout_constraintStart_toEndOf="@+id/clearButton"
+            app:layout_constraintTop_toBottomOf="@+id/brushButton"
+            app:rippleColor="@null" />
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Осталось: 60 сек"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/fillButton"
+            app:layout_constraintStart_toEndOf="@+id/fillButton"
+            app:layout_constraintTop_toTopOf="@+id/fillButton"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textTopic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Тема:"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/fillButton"
+            app:layout_constraintTop_toBottomOf="@+id/timerText" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/overlayLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#CC000000">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:elevation="10dp">
+
+            <TextView
+                android:id="@+id/topicText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тема: Кот в сапогах"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/countdownText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="72sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
